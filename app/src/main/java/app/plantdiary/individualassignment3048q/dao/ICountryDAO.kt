@@ -7,11 +7,11 @@ import retrofit2.http.Query
 
 interface ICountryDAO {
 
-    @GET("https://datahub.io/core/country-list/r/data.json")
+    @GET("/core/country-list/r/data.json")
 
    fun getAllCountries(): Call<ArrayList<Country>>
 
-    @GET("https://datahub.io/core/country-list/r/data.json")
+    @GET("/core/country-list/r/data.json")
 
     fun getCountry(@Query("Combined_Name") name: String) : Call<ArrayList<Country>>
 
