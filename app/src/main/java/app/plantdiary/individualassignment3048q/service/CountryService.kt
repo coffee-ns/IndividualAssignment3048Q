@@ -18,8 +18,7 @@ class CountryService {
         val call = service?.getAllCountries()
         call?.enqueue(object: Callback<ArrayList<Country>> {
             override fun onFailure(call: Call<ArrayList<Country>>, t: Throwable) {
-                val j = 1 + 1
-                val i = 1 + 1
+                print("Unable to retrieve service response.")
             }
 
             override fun onResponse(
