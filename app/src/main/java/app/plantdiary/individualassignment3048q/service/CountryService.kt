@@ -11,7 +11,7 @@ import retrofit2.create
 
 class CountryService {
 
-    fun fetchCountries(name: String) : MutableLiveData<ArrayList<Country>>{
+    fun fetchCountries() : MutableLiveData<ArrayList<Country>>{
 
         var _countries = MutableLiveData<ArrayList<Country>>()
         val service = RetrofitClientInstance.retrofitInstance?.create(ICountryDAO::class.java)
